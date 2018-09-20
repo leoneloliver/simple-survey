@@ -58,11 +58,11 @@
 
 /* radios */
 /* The container */
-.radio-container { display: block; position: relative; padding-left: 35px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; margin-bottom: 0; }
+.radio-container { display: block; position: relative; padding-left: 45px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; margin-bottom: 0; }
 /* Hide the browser's default radio button */
 .radio-container input {position: absolute;opacity: 0;cursor: pointer;}
 /* Create a custom radio button */
-.checkmark { position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: var(--white); border-radius: 50%; border: 1px solid var(--bpColor); }
+.checkmark { position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: var(--white); border-radius: 50%; border: 1px solid var(--bpColor); margin: 1rem 0.8rem;}
 /* On mouse-over, add a grey background color */
 .radio-container:hover input ~ .checkmark {background-color: var(--bpItemColorLigth);}
 /* When the radio button is checked, add a blue background */
@@ -96,8 +96,14 @@
 
 /* extras */
 .keypath{
-    padding: 10px;
-    background: #02020261;
-    border-radius: 50px;
-    max-height: 55px;
+  padding: 10px;
+  background: #02020261;
+  border-radius: 50px;
+  max-height: 55px;
+}
+.p-3 {
+  padding: 0 !important;
+}
+label {
+  padding: 1rem;
 }
