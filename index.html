@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- 
+ _                           _   _____ _ _           _           
+| |                         | | |  _  | (_)         (_)          
+| |     ___  ___  _ __   ___| | | | | | |___   _____ _ _ __ __ _ 
+| |    / _ \/ _ \| '_ \ / _ \ | | | | | | \ \ / / _ \ | '__/ _` |
+| |___|  __/ (_) | | | |  __/ | \ \_/ / | |\ V /  __/ | | | (_| |
+\_____/\___|\___/|_| |_|\___|_|  \___/|_|_| \_/ \___|_|_|  \__,_|
+                                                                 
+Front-end Developer: leoneloliver@gmail.com
+
+-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Simple Survey</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="bg-custom">
+
+  <article>
+    <section class="menu" once="menu" id="menu">
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm brand-primary text-white shadow">
+        <div class="container d-flex">
+          <div class="menu-logo">
+            <div class="navbar-brand col-5">  
+              
+              <a class="navbar-caption text-white" href="#">
+  <!--              <img src="http://clientreview.onresearch.com/onsurvey2.0/assets/img/logo-onresearch-white.png" class="brand-logo"> -->
+                <img src="https://keypathedu.ca/themes/custom/themekit/logo.svg" class="brand-logo keypath">
+                
+              </a>
+               
+            </div>
+          </div>
+           <div class="col-7 d-none d-lg-block d-md-block">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-white opac-md" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+              
+        </div>
+          
+    </nav>
+  </section>
+  <section>
+    <div class="container">
+          <div class="media-container-row mt-5">
+              <div class="mbr-text col-12 mbr-fonts-style">
+
+                <h3>How to best describe your job?</h3>
+                <p class="text-secondary">Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris. Proin auctor sapien eu lacus congue, tincidunt luctus nisi egestas. </p>
+                
+                <div class="row">
+                  <div class="col-12">
+
+                    <div class="card bg-white mt-2">
+                      <div class="radio card-body p-3">
+                        <label class="radio-container">Software Engineer
+                            <input type="radio" name="radio" value="Software Engineer">
+                            <span class="checkmark"></span>
+                        </label>                    
+                      </div>
+                    </div>
+                    
+                    <div class="card bg-white mt-2">
+                      <div class="radio card-body p-3">
+                        <label class="radio-container">Web Developer
+                            <input type="radio" name="radio" value="Web Developer">
+                            <span class="checkmark"></span>
+                        </label>                    
+                      </div>
+                    </div>
+
+                    <div class="card bg-white mt-2">
+                      <div class="radio card-body p-3">
+                        <label class="radio-container">Database Administrator
+                            <input type="radio" name="radio" value="Database Administrator">
+                            <span class="checkmark"></span>
+                        </label>                    
+                      </div>
+                    </div>
+
+                    <div class="card bg-white mt-2">
+                      <div class="radio card-body p-3">
+                        <label class="radio-container">Data Analyst
+                            <input type="radio" name="radio" value="Data Analyst">
+                            <span class="checkmark"></span>
+                        </label>                    
+                      </div>
+                    </div>
+
+                    <div class="card bg-white mt-2">
+                      <div class="radio card-body p-3">
+                        <label class="radio-container">Keypather Master
+                            <input type="radio" name="radio" value="I am happy!">
+                            <span class="checkmark"></span>
+                        </label>                    
+                      </div>
+                    </div>
+
+                </div>
+                
+            </div>
+          </div>
+
+          <div class="container d-flex justify-content-center mt-5 mb-5">
+            <button type="button" class="btn btn-primary btn-md  btn-brand-muted mr-1 btn-rounded shadow-sm btn-controls" id="back_button">Preview</button>
+            <button type="button" class="btn btn-primary btn-md  btn-brand-secondary  ml-1 btn-rounded shadow-sm btn-controls" id="submit_button">Next</button>
+          </div>
+                 
+      </div>
+  </section>
+  </article>
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Powered by Leonel Oliveira</span>
+    </div>
+  </footer>
+
+
+
+  <!-- error modal -->
+  <div class="modal fade alert" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  bg-danger text-white shadow" role="document">
+      <div>
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="fa fa-warning margin-right-5"></i></h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!--  Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+  </body>
+</html>

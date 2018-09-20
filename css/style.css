@@ -1,0 +1,103 @@
+:root{
+/*   --bpColor: #5BC5CD;
+  --bsColor: #F58233;
+  --bsColorHover: #DF7706;
+  --mutedColor: #555;
+  --mutedColorBorder: #ccc;
+  --mutedColorHover: #fff;
+  --mutedColorBorderHover: #bfbebe;
+  --bpItemColorLigth: #bff9fd;
+  --bpColorLight: #E6F6F7;
+  
+  --white: #fff;
+  --borderModal: #ff4d44;
+  --bgColor: #ececec; */
+  
+/*   
+  --bpColor: #903e5a;
+  --bsColor: #3d482f;
+  --bsColorHover: #cb738d;
+  --mutedColor: #555;
+  --mutedColorBorder: #ccc;
+  --mutedColorHover: #fff;
+  --mutedColorBorderHover: #bfbebe;
+  --bpItemColorLigth: #f5c8cb;
+  --bpColorLight: #f1e2e7;
+  
+  --white: #fff;
+  --borderModal: #ff4d44;
+  --bgColor: #ececec; */
+  
+  
+  --bpColor: #712c21;
+  --bsColor: #eccf00;
+  --bsColorHover: #712c21;
+  --mutedColor: #555;
+  --mutedColorBorder: #ccc;
+  --mutedColorHover: #fff;
+  --mutedColorBorderHover: #333;
+  --bpItemColorLigth: #fde5e3;
+  --bpColorLight: #fde5e3;
+  
+  --white: #fff;
+  --borderModal: #ff4d44;
+  --bgColor: #ececec;
+}
+
+/* brand custom */
+.brand-primary{background: var(--bpColor);}
+.brand-secondary{background: var(--bsColor);}
+.btn-brand-secondary{background: var(--bsColor);border: var(--bsColor);}
+.btn-brand-secondary:hover, .btn-brand-secondary:active{background: var(--bsColorHover) !important; border: #var(--bsColorHover) ;}
+.brand-logo{max-height: 35px;}
+.btn-rounded {-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;}
+.btn-brand-muted{color: var(--mutedColor);background-color: var(--mutedColorBorder);border-color: var(--mutedColorBorder);}
+.btn-brand-muted:hover,.btn-brand-muted:active{color: var(--mutedColorHover); background-color: var(--mutedColorBorderHover) !important ;border-color:  var(--mutedColorBorderHover);}
+.btn{width: 200px}
+.bg-custom{background: var(--bgColor);}
+
+/* radios */
+/* The container */
+.radio-container { display: block; position: relative; padding-left: 35px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; margin-bottom: 0; }
+/* Hide the browser's default radio button */
+.radio-container input {position: absolute;opacity: 0;cursor: pointer;}
+/* Create a custom radio button */
+.checkmark { position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: var(--white); border-radius: 50%; border: 1px solid var(--bpColor); }
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {background-color: var(--bpItemColorLigth);}
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {background-color: var(--bpColor);}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {content: "";position: absolute;display: none;}
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {display: block;}
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after { top: 8px; left: 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--white); }
+
+.card.selected, .card:hover{border: 1px solid var(--bpColor);}
+.card.selected{background: var(--bpColorLight) !important;box-shadow: 0 .1rem 1rem rgba(0,0,0,.15)!important;}
+.card{cursor: pointer;}
+
+/*footer*/
+.footer {width: 100%;height: 60px; line-height: 60px; background-color: var(--white);}
+@media screen and (min-width: 768px) {.footer {position: absolute;bottom: 0;}}
+
+/*progress*/
+.progress {background-color: transparent;border: 1px solid var(--white);}
+
+/*opacity*/
+.opac-sm{opacity: 0.8;}
+.opac-md{opacity: 0.5;}
+
+/*modal*/
+.modal-backdrop.show {opacity: .1;}
+.modal-dialog {margin: 15% auto;}
+.modal-header {border-bottom: 1px solid var(--borderModal);}
+
+/* extras */
+.keypath{
+    padding: 10px;
+    background: #02020261;
+    border-radius: 50px;
+    max-height: 55px;
+}
