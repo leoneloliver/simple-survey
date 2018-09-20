@@ -2,6 +2,7 @@ let resultVal = '';
 let hasError = true;
 const errorMsg = ['Attention','Please select an option!'];
 const errorMsg2 = ['=(','You can not go back. Sorry!'];
+const successMsg = ['Thank you =) ','Your choice was: '];
 
 let radios = document.getElementsByName('radio');
 let card = document.getElementsByClassName("card");
@@ -19,7 +20,10 @@ for (let i = 0; i < card.length; i++) {
 const btn = document.getElementById("submit_button");
 btn.addEventListener("click", function() {
   if(resultVal){
-    alert(resultVal);
+    //alert(resultVal);
+    document.getElementsByClassName('modal-title')[1].innerText = successMsg[0];
+    document.getElementsByClassName('modal-body')[1].innerText = successMsg[1]+''+resultVal;
+    $("#successModal").modal();
   }else{
     	document.getElementsByClassName('modal-title')[0].innerText = errorMsg[0];
 		  document.getElementsByClassName('modal-body')[0].innerText = errorMsg[1];
